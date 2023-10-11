@@ -1,7 +1,7 @@
 const people = [
     {
         Name: 'Stevon',
-        nmuber: [1,2,3,4]
+        number: [1,2,3,4]
     },
     {
         Name: 'Chris',
@@ -10,4 +10,14 @@ const people = [
 ];
 
 people.forEach((people) => console.log(people.Name));
-people.forEach((people) => console.log(people.number[number.length]));
+people.forEach((element) => console.log(element.number));
+
+const logElement = (element, index) => {
+    console.log(`a[${index}] = ${element}`);
+  };
+  
+  [number].forEach(logElement);
+  // Logs:
+  // a[0] = 2
+  // a[1] = 5
+  // a[3] = 9
