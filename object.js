@@ -11,14 +11,5 @@ const people = [
 ];
 
 people.forEach((people) => console.log(people.Name));
-people.forEach((element) => console.log(element.number));
 
-people.forEach((number) => {
-    console.log(number)
-});
-
-const logArrayElements = (element) => {
-    console.log(`${element}`);
-};
-
-[people.number].forEach(logArrayElements);
+people.forEach((people) => people.numbers.forEach((numbers) => console.log(numbers)));
