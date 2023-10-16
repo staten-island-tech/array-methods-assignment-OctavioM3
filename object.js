@@ -1,15 +1,23 @@
 
-const people = [
+const artists = [
     {
-        Name: 'Stevon',
-        number: [1,2,3,4]
+        Name: 'Post Malone',
+        albums: ["AUSTIN","Hollywoods Bleeding","Twelve Carat Toothache","Stoney"],
+        releasedrecently: true,
     },
     {
-        Name: 'Chris',
-        numbers: [5,6,7,8]
+        Name: 'Kanye West',
+        albums: ["Graduation","The College Dropout","Donda","The Life of Pablo"],
+        releasedrecently: false,
+    },
+    {
+        Name: 'Tyler, The Creator',
+        albums: ["Flower Boy","IGOR","CALL ME IF YOU GET LOST"],
+        releasedrecently: true,
     },
 ];
 
-people.forEach((people) => console.log(people.Name));
-
-people.forEach((people) => people.numbers.forEach((numbers) => console.log(numbers)));
+artists.forEach((artists) => console.log(artists.Name));
+const released = artists.filter((artist) => artist.releasedrecently !== true);
+console.log(released)
+artists.forEach((artist) => artist.albums.forEach((album) => console.log(album)));
